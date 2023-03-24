@@ -74,7 +74,9 @@ namespace TESTING
             int numRows = rows.Count;
             int numCols = rows[0].Length;
 
-            dataGridView1.ClearSelection();
+            dataGridView1.Rows.Clear();
+            dataGridView1.Columns.Clear();
+            
             dataGridView1.ColumnCount = numCols;
             dataGridView1.RowCount = numRows;
             dataGridView1.RowHeadersVisible = false;
@@ -123,12 +125,53 @@ namespace TESTING
 
             openFileDialog.Filter = "Text Files (*.txt)|*.txt";
             openFileDialog.Title = "Select a Text File";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            openFileDialog.ShowDialog();
+            if(openFileDialog.FileName != "")
             {
                 filePath = openFileDialog.FileName;
-                string fileName = Path.GetFileName(filePath);
-                textBox1.Text = fileName;
+                try
+                {
+                    string[] lines = File.ReadAllLines(filePath);
+
+                    if (lines.Length == 0)
+                    {
+                        throw new Exception("File is empty.");
+                    }
+
+                    int rows = lines.Length;
+                    int cols = lines[0].Split(' ').Length;
+
+                    foreach (string line in lines)
+                    {
+                        string[] characters = line.Split(' ');
+
+                        if (characters.Length != cols)
+                        {
+                            throw new Exception("Invalid number of columns.");
+                        }
+
+                        foreach (string character in characters)
+                        {
+                            if (character != "K" && character != "R" && character != "T" && character != "X")
+                            {
+                                throw new Exception("Invalid character found.");
+                            }
+                            else
+                            {
+                                string fileName = Path.GetFileName(filePath);
+                                textBox1.Text = fileName;
+                            }
+                        }
+                    }
+
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            
+
 
 
             }
@@ -204,6 +247,8 @@ namespace TESTING
                 textBox5.ReadOnly = true;
                 dataGridView1.ReadOnly = true;
 
+                
+                
                 dataGridView1.ColumnCount = Map.GetLength(1);
                 dataGridView1.RowCount = Map.GetLength(0);
 
@@ -243,7 +288,7 @@ namespace TESTING
                         }
                     }
                 }
-                dataGridView1.ClearSelection();
+                
             }
             else if (radioButton2.Checked)
             {
@@ -276,7 +321,10 @@ namespace TESTING
                 textBox5.ReadOnly = true;
                 dataGridView1.ReadOnly = true;
 
-
+                
+             
+                
+                
                 dataGridView1.ColumnCount = Map.GetLength(1);
                 dataGridView1.RowCount = Map.GetLength(0);
 
@@ -316,7 +364,7 @@ namespace TESTING
                         }
                     }
                 }
-                dataGridView1.ClearSelection();
+                
 
 
 
