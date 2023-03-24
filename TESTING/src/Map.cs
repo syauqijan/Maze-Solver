@@ -15,10 +15,6 @@ namespace Map
             int baris = data.Length;
             int kolom = data[0].Split(' ').Length;
 
-
-            // Console.WriteLine("baris: " + baris);
-            // Console.WriteLine("kolom: " + kolom);
-
             char[,] hasil = new char[data.Length, kolom];
 
             for (int w = 0; w < data.Length; w++)
@@ -26,7 +22,6 @@ namespace Map
                 for (int x = 0; x < kolom; x++)
                 {
                     hasil[w, x] = data[w][x * 2];
-                    //Console.WriteLine("matrix ke " + w + ", " + x + ": " + hasil[w, x]);
                 }
             }
             return hasil;
