@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\krustycrew"
+    "\\TESTING",
+    "\\TESTING\\Properties",
+    "\\TESTING\\src"
   ],
-  "SelectedNode": "\\krustycrew.sln",
+  "SelectedNode": "\\TESTING\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

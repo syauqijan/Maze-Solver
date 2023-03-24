@@ -1,0 +1,10 @@
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\bin\Debug\TESTING.exe
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\bin\Debug\TESTING.pdb
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\obj\Debug\TESTING.csproj.AssemblyReference.cache
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\obj\Debug\TESTING.csproj.SuggestedBindingRedirects.cache
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\obj\Debug\TESTING.Form1.resources
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\obj\Debug\TESTING.Properties.Resources.resources
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\obj\Debug\TESTING.csproj.GenerateResource.cache
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\obj\Debug\TESTING.csproj.CoreCompileInputs.cache
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\obj\Debug\TESTING.exe
+C:\Users\syauq\Documents\SEMESTER 4\STIMA\NYOBA\TESTING\TESTING\obj\Debug\TESTING.pdb
