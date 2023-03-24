@@ -1,9 +1,3 @@
-i. Deskripsi singkat program yang dibuat
-ii. Requirement program dan instalasi module/package tertentu bila ada
-iii. Langkah meng-compile program jika diperlukan
-iv. Cara menggunakan program
-v. Author / identitas pembuat
-
 # Tugas Besar 1 IF2211 Strategi Algoritma
 > Pengaplikasian Algoritma BFS dan DFS dalam Menyelesaikan Persoalan Maze Treasure Hunt
 
@@ -18,11 +12,22 @@ v. Author / identitas pembuat
 
 
 ## About the Program
-Program dengan GUI ini akan mengimplementasikan BFS dan DFS untuk mendapatkan rute untuk memperoleh seluruh treasure atau harta karun yang ada di dalam sebuah maze. Pencarian harta karun dimulai dari K (titik awal) dan diakhiri di titik T (tempat harta karun). Langkah yang digunakan dalam pencarian rute menggunakan prioritas RDUL (Right-Down-Up-Left). Program dapat menerima dan membaca input sebuah file txt yang berisi maze yang akan ditemukan solusi rute mendapatkan treasure-nya dengan algoritma DFS dan BFS. 
+Program dengan GUI ini akan mengimplementasikan BFS dan DFS untuk mendapatkan rute untuk memperoleh seluruh treasure atau harta karun yang ada di dalam sebuah maze. Pencarian harta karun dimulai dari K (titik awal) dan diakhiri di titik T (tempat harta karun). Langkah yang digunakan dalam pencarian rute menggunakan prioritas RDUL (Right-Down-Up-Left). Program dapat menerima dan membaca input sebuah file txt yang berisi maze yang akan ditemukan solusi rute mendapatkan treasure-nya dengan algoritma DFS dan BFS. Pada saat memvisualisasikan gridnya, program akan menampilkan maze awal dengan deskripsi :
+ - grid berwarna biru : titik awal pencarian harta karun
+ - grid berwarna hijau : harta karun
+ - grid berwarna hitam : grid yang tidak dapat dilewati
+ - grid berwarna putih  : grid yang dapat dilewati untuk mendapatkan harta karun
+
+Setelah mengeklik visualize, program akan menampilkan maze hasil dengan deskripsi :
+
+ - grid berwarna kuning  : grid yang dilewati untuk mendapatkan harta karun
+ - grid berwarna hitam :  grid yang tidak dapat dilewati
+ - grid berwarna putih : grid yang tidak dilewati untuk mendapatkan harta karun.
 
 
 ## Requirements
 Untuk dapat menjalankan program ini, maka pastikan perangkat sudah dilengkapi oleh aplikasi berikut :
+
 1. [Visual Studio](https://visualstudio.microsoft.com/)
 2. [C#](https://www.microsoft.com/en-us/download/details.aspx?id=7029)
 3. [.NET Framework 4.7.2](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net472)
@@ -44,7 +49,7 @@ To run the Maze Solver program, follow these steps:
 1. Clone this repository
 2. Build the executable by following the above instructions.
 3. Open the `./bin/Debug/TESTING.exe` file.
-4. Select your maze file `maze.txt`
+4. Select your maze file `sampel-1.txt`
 5. Select either `DFS` or `BFS` for your maze algorithm
 6. Click on `Visualize` to display the maze.
 7. Click on `Search` to display the solution.
